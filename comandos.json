@@ -1,0 +1,149 @@
+{
+  "comandos": [
+    {
+      "navegacao": [
+        { "pesquisar no google *": { "acao": "web?https://www.google.com/search?q=", "resposta": "Pesquisando {param} no Google" } },
+        { "toque *": { "acao": "web?https://www.youtube.com/results?search_query=", "resposta": "Reproduzindo {param} no YouTube" } },
+        { "abrir youtube": { "acao": "web!https://www.youtube.com", "resposta": "Abrindo o YouTube" } },
+        { "abrir google": { "acao": "web!https://www.google.com", "resposta": "Abrindo o Google" } },
+        { "abrir whatsapp": { "acao": "web!https://web.whatsapp.com", "resposta": "Abrindo o WhatsApp Web" } },
+        { "abrir netflix": { "acao": "web!https://netflix.com", "resposta": "Abrindo a Netflix" } },
+        { "abrir facebook": { "acao": "web!https://facebook.com", "resposta": "Abrindo o Facebook" } },
+        { "abrir gmail": { "acao": "web!https://mail.google.com", "resposta": "Abrindo o Gmail" } },
+        { "abrir outlook": { "acao": "web!https://outlook.live.com", "resposta": "Abrindo o Outlook" } },
+        { "abrir github": { "acao": "web!https://github.com", "resposta": "Abrindo o GitHub" } },
+        { "abrir linkedin": { "acao": "web!https://linkedin.com", "resposta": "Abrindo o LinkedIn" } }
+      ]
+    },
+    {
+      "programas": [
+        { "abrir calculadora": { "acao": "path:C:/Windows/System32/calc.exe", "resposta": "Abrindo a Calculadora" } },
+        { "abrir bloco de notas": { "acao": "path:C:/Windows/System32/notepad.exe", "resposta": "Abrindo o Bloco de Notas" } },
+        { "abrir word": { "acao": "path:C:/Program Files/Microsoft Office/Office16/WINWORD.EXE", "resposta": "Abrindo o Word" } },
+        { "abrir excel": { "acao": "path:C:/Program Files/Microsoft Office/Office16/EXCEL.EXE", "resposta": "Abrindo o Excel" } },
+        { "abrir powerpoint": { "acao": "path:C:/Program Files/Microsoft Office/Office16/POWERPNT.EXE", "resposta": "Abrindo o PowerPoint" } },
+        { "abrir chrome": { "acao": "path:C:/Program Files/Google/Chrome/Application/chrome.exe", "resposta": "Abrindo o Google Chrome" } },
+        { "abrir edge": { "acao": "path:C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe", "resposta": "Abrindo o Microsoft Edge" } },
+        { "abrir paint": { "acao": "path:C:/Windows/System32/mspaint.exe", "resposta": "Abrindo o Paint" } },
+        { "abrir cmd": { "acao": "path:C:/Windows/System32/cmd.exe", "resposta": "Abrindo o Prompt de Comando" } },
+        { "abrir explorador": { "acao": "path:C:/Windows/explorer.exe", "resposta": "Abrindo o Explorador de Arquivos" } }
+      ]
+    },
+    {
+      "word": [
+        { "escrever texto": { "acao": "plugins.word_plugin.ditar_no_word", "resposta": "Escrevendo no Word" } }
+      ]
+    },
+    {
+      "excel": [
+        { "escrever planilha": { "acao": "plugins.excel_plugin.ditar_no_excel", "resposta": "Escrevendo na planilha do Excel" } }
+      ]
+    },
+    {
+      "sistema": [
+        { "recarregar comandos": { "acao": "commands", "resposta": "Recarregando todos os comandos" } },
+        { "atualizar comandos": { "acao": "commands", "resposta": "Atualizando a lista de comandos" } },
+        { "desligar computador": { "acao": "system:shutdown", "resposta": "Desligando o computador" } },
+        { "reiniciar computador": { "acao": "system:restart", "resposta": "Reiniciando o computador" } },
+        { "bloquear computador": { "acao": "system:lock", "resposta": "Bloqueando o computador" } },
+        { "hibernar computador": { "acao": "system:hibernate", "resposta": "Colocando o computador em hibernação" } },
+        { "suspender computador": { "acao": "system:sleep", "resposta": "Colocando o computador em suspensão" } },
+
+        { "abrir configurações": { "acao": "system:settings", "resposta": "Abrindo as configurações do Windows" } },
+        { "abrir gerenciador de tarefas": { "acao": "system:taskmgr", "resposta": "Abrindo o Gerenciador de Tarefas" } },
+        { "abrir painel de controle": { "acao": "system:control", "resposta": "Abrindo o Painel de Controle" } },
+        { "abrir gerenciamento de discos": { "acao": "system:diskmgmt", "resposta": "Abrindo o Gerenciamento de Discos" } },
+        { "abrir gerenciamento de dispositivos": { "acao": "system:devmgmt", "resposta": "Abrindo o Gerenciador de Dispositivos" } },
+        { "abrir serviços": { "acao": "system:services", "resposta": "Abrindo a lista de serviços" } },
+        { "abrir monitor de recursos": { "acao": "system:resmon", "resposta": "Abrindo o Monitor de Recursos" } },
+        { "abrir informações do sistema": { "acao": "system:msinfo32", "resposta": "Abrindo as informações do sistema" } },
+
+        { "ver ip": { "acao": "system:ipconfig", "resposta": "Mostrando o endereço IP" } },
+        { "limpar tela": { "acao": "system:cls", "resposta": "Limpando a tela" } },
+
+        { "aumentar volume": { "acao": "system:volume_up", "resposta": "Aumentando o volume" } },
+        { "diminuir volume": { "acao": "system:volume_down", "resposta": "Diminuindo o volume" } },
+        { "mutar volume": { "acao": "system:mute", "resposta": "Mutando o volume" } },
+
+        { "aumentar brilho": { "acao": "system:brightness_up", "resposta": "Aumentando o brilho da tela" } },
+        { "diminuir brilho": { "acao": "system:brightness_down", "resposta": "Diminuindo o brilho da tela" } },
+        { "definir brilho em *": { "acao": "system:brightness_set", "resposta": "Definindo o brilho em {param}" } },
+
+        { "mostrar hora": { "acao": "system:show_time", "resposta": "Agora são {param}" } },
+        { "mostrar data": { "acao": "system:show_date", "resposta": "Hoje é {param}" } },
+        { "acertar hora": { "acao": "system:set_time", "resposta": "Ajustando a hora do sistema" } },
+        { "acertar data": { "acao": "system:set_date", "resposta": "Ajustando a data do sistema" } },
+
+        { "ativar wifi": { "acao": "system:wifi_on", "resposta": "Ativando o Wi-Fi" } },
+        { "desativar wifi": { "acao": "system:wifi_off", "resposta": "Desativando o Wi-Fi" } },
+        { "mostrar redes disponíveis": { "acao": "system:show_networks", "resposta": "Mostrando redes Wi-Fi disponíveis" } },
+
+        { "ativar modo avião": { "acao": "system:airplane_on", "resposta": "Ativando o modo avião" } },
+        { "desativar modo avião": { "acao": "system:airplane_off", "resposta": "Desativando o modo avião" } },
+
+        { "ativar bluetooth": { "acao": "system:bluetooth_on", "resposta": "Ativando o Bluetooth" } },
+        { "desativar bluetooth": { "acao": "system:bluetooth_off", "resposta": "Desativando o Bluetooth" } },
+
+        { "tirar print": { "acao": "system:screenshot", "resposta": "Capturando a tela" } },
+        { "abrir downloads": { "acao": "system:open_downloads", "resposta": "Abrindo a pasta de downloads" } },
+        { "abrir documentos": { "acao": "system:open_documents", "resposta": "Abrindo a pasta de documentos" } },
+        { "abrir imagens": { "acao": "system:open_pictures", "resposta": "Abrindo a pasta de imagens" } },
+        { "abrir vídeos": { "acao": "system:open_videos", "resposta": "Abrindo a pasta de vídeos" } },
+        { "abrir música": { "acao": "system:open_music", "resposta": "Abrindo a pasta de músicas" } },
+
+        { "esvaziar lixeira": { "acao": "system:empty_recycle_bin", "resposta": "Esvaziando a lixeira" } }
+      ]
+    },
+    {
+      "fechar programas": [
+        { "fechar calculadora": { "acao": "kill:calc.exe", "resposta": "Fechando a Calculadora" } },
+        { "fechar bloco de notas": { "acao": "kill:notepad.exe", "resposta": "Fechando o Bloco de Notas" } },
+        { "fechar word": { "acao": "kill:WINWORD.EXE", "resposta": "Fechando o Word" } },
+        { "fechar excel": { "acao": "kill:EXCEL.EXE", "resposta": "Fechando o Excel" } },
+        { "fechar powerpoint": { "acao": "kill:POWERPNT.EXE", "resposta": "Fechando o PowerPoint" } },
+        { "fechar chrome": { "acao": "kill:chrome.exe", "resposta": "Fechando o Chrome" } },
+        { "fechar edge": { "acao": "kill:msedge.exe", "resposta": "Fechando o Edge" } },
+        { "fechar paint": { "acao": "kill:mspaint.exe", "resposta": "Fechando o Paint" } },
+        { "fechar cmd": { "acao": "kill:cmd.exe", "resposta": "Fechando o Prompt de Comando" } },
+        { "fechar explorador": { "acao": "kill:explorer.exe", "resposta": "Fechando o Explorador de Arquivos" } }
+      ]
+    },
+    {
+      "multimidia": [
+        { "tocar música": { "acao": "media:play_music", "resposta": "Reproduzindo música" } },
+        { "pausar música": { "acao": "media:pause_music", "resposta": "Música pausada" } },
+        { "próxima música": { "acao": "media:next_track", "resposta": "Tocando a próxima música" } },
+        { "música anterior": { "acao": "media:prev_track", "resposta": "Tocando a música anterior" } },
+        { "tocar música *": { "acao": "media:search_music", "resposta": "Procurando música: {param}" } },
+        { "tocar série *": { "acao": "media:play_series", "resposta": "Reproduzindo a série: {param}" } },
+        { "tocar filme *": { "acao": "media:play_movie", "resposta": "Reproduzindo o filme: {param}" } },
+        { "abrir netflix e tocar *": { "acao": "media:netflix_search", "resposta": "Abrindo a Netflix e reproduzindo {param}" } },
+        { "abrir youtube e tocar *": { "acao": "media:youtube_search", "resposta": "Abrindo o YouTube e reproduzindo {param}" } }
+      ]
+    },
+    {
+      "alarme": [
+        { "me lembre de * daqui #": { "time_indicator": "daqui", "type": "in", "resposta": "Alarme configurado: lembrar de {param}" } },
+        { "me lembre de * daqui a #": { "time_indicator": "daqui a", "type": "in", "resposta": "Alarme configurado: lembrar de {param}" } },
+        { "me lembre de * em #": { "time_indicator": "em", "type": "in", "resposta": "Alarme configurado: lembrar de {param}" } },
+        { "lembrar de * em #": { "time_indicator": "em", "type": "in", "resposta": "Alarme configurado: lembrar de {param}" } },
+        { "lembre de * em #": { "time_indicator": "em", "type": "in", "resposta": "Alarme configurado: lembrar de {param}" } },
+        { "lembra de * em #": { "time_indicator": "em", "type": "in", "resposta": "Alarme configurado: lembrar de {param}" } },
+        { "me lembre que * daqui #": { "time_indicator": "daqui", "type": "in", "resposta": "Alarme configurado: lembrar que {param}" } },
+        { "me lembre que * daqui a #": { "time_indicator": "daqui a", "type": "in", "resposta": "Alarme configurado: lembrar que {param}" } },
+        { "me lembre que * em #": { "time_indicator": "em", "type": "in", "resposta": "Alarme configurado: lembrar que {param}" } },
+        { "lembrar que * em #": { "time_indicator": "em", "type": "in", "resposta": "Alarme configurado: lembrar que {param}" } },
+        { "lembre que * em #": { "time_indicator": "em", "type": "in", "resposta": "Alarme configurado: lembrar que {param}" } },
+        { "lembra que * em #": { "time_indicator": "em", "type": "in", "resposta": "Alarme configurado: lembrar que {param}" } }
+      ]
+    },
+    {
+      "pastas": [
+        { "criar pasta *": { "acao": "plugins.pastas_plugin.mkdir", "resposta": "Criando a pasta {param}" } },
+        { "nova pasta *": { "acao": "plugins.pastas_plugin.mkdir", "resposta": "Criando nova pasta chamada {param}" } },
+        { "fazer pasta *": { "acao": "plugins.pastas_plugin.mkdir", "resposta": "Fazendo a pasta {param}" } },
+        { "organizar desktop": { "acao": "plugins.organizar_desktop.organizar_desktop" } }
+      ]
+    }
+  ]
+}

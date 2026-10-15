@@ -1,0 +1,150 @@
+{
+  "comandos": [
+    {
+      "navegacao": [
+        { "pesquisar no google *": "web?https://www.google.com/search?q=" },
+        { "toque *": "web?https://www.youtube.com/results?search_query=" },
+        { "abrir youtube": "web!https://www.youtube.com" },
+        { "abrir google": "web!https://www.google.com" },
+        { "abrir whatsapp": "web!https://web.whatsapp.com" },
+        { "abrir netflix": "web!https://netflix.com" },
+        { "abrir facebook": "web!https://facebook.com" },
+        { "abrir gmail": "web!https://mail.google.com" },
+        { "abrir outlook": "web!https://outlook.live.com" },
+        { "abrir github": "web!https://github.com" },
+        { "abrir linkedin": "web!https://linkedin.com" }
+      ]
+    },
+    {
+      "programas": [
+        { "abrir calculadora": "path:C:/Windows/System32/calc.exe" },
+        { "abrir bloco de notas": "path:C:/Windows/System32/notepad.exe" },
+        { "abrir word": "path:C:/Program Files/Microsoft Office/Office16/WINWORD.EXE" },
+        { "abrir excel": "path:C:/Program Files/Microsoft Office/Office16/EXCEL.EXE" },
+        { "abrir powerpoint": "path:C:/Program Files/Microsoft Office/Office16/POWERPNT.EXE" },
+        { "abrir chrome": "path:C:/Program Files/Google/Chrome/Application/chrome.exe" },
+        { "abrir edge": "path:C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" },
+        { "abrir paint": "path:C:/Windows/System32/mspaint.exe" },
+        { "abrir cmd": "path:C:/Windows/System32/cmd.exe" },
+        { "abrir explorador": "path:C:/Windows/explorer.exe" }
+      ]
+    },
+    {
+      "word": [
+        { "escrever texto": "word_plugin.ditar_no_word" }
+      ]
+    },
+     {
+      "excel": [
+        { "escrever planilha": "excel_plugin.ditar_no_excel" }
+      ]
+    },
+    {
+      "sistema": [
+        { "recarregar comandos": "commands" },
+        { "atualizar comandos": "commands" },
+
+        { "desligar computador": "system:shutdown" },
+        { "reiniciar computador": "system:restart" },
+        { "bloquear computador": "system:lock" },
+        { "hibernar computador": "system:hibernate" },
+        { "suspender computador": "system:sleep" },
+
+        { "abrir configurações": "system:settings" },
+        { "abrir gerenciador de tarefas": "system:taskmgr" },
+        { "abrir painel de controle": "system:control" },
+        { "abrir gerenciamento de discos": "system:diskmgmt" },
+        { "abrir gerenciamento de dispositivos": "system:devmgmt" },
+        { "abrir serviços": "system:services" },
+        { "abrir monitor de recursos": "system:resmon" },
+        { "abrir informações do sistema": "system:msinfo32" },
+
+        { "ver ip": "system:ipconfig" },
+        { "limpar tela": "system:cls" },
+
+        { "aumentar volume": "system:volume_up" },
+        { "diminuir volume": "system:volume_down" },
+        { "mutar volume": "system:mute" },
+
+        { "aumentar brilho": "system:brightness_up" },
+        { "diminuir brilho": "system:brightness_down" },
+        { "definir brilho em *": "system:brightness_set" },
+
+        { "mostrar hora": "system:show_time" },
+        { "mostrar data": "system:show_date" },
+        { "acertar hora": "system:set_time" },
+        { "acertar data": "system:set_date" },
+
+        { "ativar wifi": "system:wifi_on" },
+        { "desativar wifi": "system:wifi_off" },
+        { "mostrar redes disponíveis": "system:show_networks" },
+
+        { "ativar modo avião": "system:airplane_on" },
+        { "desativar modo avião": "system:airplane_off" },
+
+        { "ativar bluetooth": "system:bluetooth_on" },
+        { "desativar bluetooth": "system:bluetooth_off" },
+
+        { "tirar print": "system:screenshot" },
+        { "abrir downloads": "system:open_downloads" },
+        { "abrir documentos": "system:open_documents" },
+        { "abrir imagens": "system:open_pictures" },
+        { "abrir vídeos": "system:open_videos" },
+        { "abrir música": "system:open_music" },
+
+        { "esvaziar lixeira": "system:empty_recycle_bin" }
+      ]
+    },
+    {
+      "fechar programas": [
+        { "fechar calculadora": "kill:calc.exe" },
+        { "fechar bloco de notas": "kill:notepad.exe" },
+        { "fechar word": "kill:WINWORD.EXE" },
+        { "fechar excel": "kill:EXCEL.EXE" },
+        { "fechar powerpoint": "kill:POWERPNT.EXE" },
+        { "fechar chrome": "kill:chrome.exe" },
+        { "fechar edge": "kill:msedge.exe" },
+        { "fechar paint": "kill:mspaint.exe" },
+        { "fechar cmd": "kill:cmd.exe" },
+        { "fechar explorador": "kill:explorer.exe" }
+      ]
+    },
+
+    {
+      "multimidia": [
+        { "tocar música": "media:play_music" },
+        { "pausar música": "media:pause_music" },
+        { "próxima música": "media:next_track" },
+        { "música anterior": "media:prev_track" },
+        { "tocar música *": "media:search_music" },
+        { "tocar série *": "media:play_series" },
+        { "tocar filme *": "media:play_movie" },
+        { "abrir netflix e tocar *": "media:netflix_search" },
+        { "abrir youtube e tocar *": "media:youtube_search" }
+      ]
+    },
+     {
+      "alarme": [
+        { "me lembre de * daqui #": { "time_indicator": "daqui", "type": "in" } },
+        { "me lembre de * daqui a #": { "time_indicator": "daqui a", "type": "in" } },
+        { "me lembre de * em #": { "time_indicator": "em", "type": "in" } },
+        { "lembrar de * em #": { "time_indicator": "em", "type": "in" } },
+        { "lembre de * em #": { "time_indicator": "em", "type": "in" } },
+        { "lembra de * em #": { "time_indicator": "em", "type": "in" } },
+        { "me lembre que * daqui #": { "time_indicator": "daqui", "type": "in" } },
+        { "me lembre que * daqui a #": { "time_indicator": "daqui a", "type": "in" } },
+        { "me lembre que * em #": { "time_indicator": "em", "type": "in" } },
+        { "lembrar que * em #": { "time_indicator": "em", "type": "in" } },
+        { "lembre que * em #": { "time_indicator": "em", "type": "in" } },
+        { "lembra que * em #": { "time_indicator": "em", "type": "in" } }
+      ]
+    },
+    {
+      "pastas": [
+        { "criar pasta *": "mkdir" },
+        { "nova pasta *": "mkdir" },
+        { "fazer pasta *": "mkdir" }
+      ]
+    }
+  ]
+}
