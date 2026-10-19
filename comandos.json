@@ -144,6 +144,40 @@
         { "fazer pasta *": { "acao": "plugins.pastas_plugin.mkdir", "resposta": "Fazendo a pasta {param}" } },
         { "organizar desktop": { "acao": "plugins.organizar_desktop.organizar_desktop" } }
       ]
+    },
+    {
+      "escritorio": [
+        {
+          "organiza a pasta *": {
+            "acao": "plugins.organizar_ficheiros.executar",
+            "resposta": "A organizar a pasta {param}"
+          }
+        },
+        {
+          "envia email para *": {
+            "acao": "plugins.enviar_email.executar",
+            "resposta": "A enviar email"
+          }
+        },
+        {
+          "gera contrato para *": {
+            "acao": "plugins.gerar_contrato.executar",
+            "resposta": "A gerar contrato"
+          }
+        },
+        {
+          "extrai o texto de *": {
+            "acao": "plugins.extrair_pdf.executar",
+            "resposta": "A extrair texto do PDF"
+          }
+        },
+        {
+          "consolida os excel de *": {
+            "acao": "plugins.consolidar_excel.executar",
+            "resposta": "A consolidar ficheiros Excel"
+          }
+        }
+      ]
     }
   ]
 }
